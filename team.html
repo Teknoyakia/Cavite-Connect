@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE-edge">
+      <meta name="viewport" content="width-device-width,
+      initial-scale=1">
+      <title>Cavite Connect</title>
+     <link rel="stylesheet" href="style/sidebar.css">
+     <link rel="stylesheet" href="style/team.css">
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+     <script type="text/javascript" src="app.js" defer></script>
+   </head>
+    <body>
+      <nav id="sidebar">
+         <ul>
+            <li>
+               <span class="logo">Cavite Connect</span>
+               <button onclick=toggleSidebar() id="toggle-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-120h80v120h560v-480H200v120h-80v-200q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm260-140-56-56 83-84H120v-80h367l-83-84 56-56 180 180-180 180Z"/></svg>
+               </button>
+            </li>
+            <li class="active">
+               <a href="index.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+                  <span>Home</span>
+               </a>
+            </li>
+
+            <li>
+               <a href="place.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                  <span>Tourist Spots</span>
+               </a>
+            </li>
+
+            <li>
+               <a href="Foods.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M280-80v-366q-51-14-85.5-56T160-600v-280h80v280h40v-280h80v280h40v-280h80v280q0 56-34.5 98T360-446v366h-80Zm400 0v-320H560v-280q0-83 58.5-141.5T760-880v800h-80Z"/></svg>
+                  <span>Foods</span>
+               </a>
+            </li>
+ 
+            <li>
+               <a href="team.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z"/></svg>
+                  <span>Team</span>
+               </a>
+            </li>
+
+            <li>
+               <a href="reference.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                  <span>Reference</span>
+               </a>
+            </li>
+
+
+         </ul>
+         
+      </nav>
+    </body>
+    <main>
+      <div class="main">
+         <h3 class="heading"><span>GROUP 8 </span>Developers</h3>
+         <div class="container">
+             <div class="card">
+                 <img src="/developers/chantrice.jpg">
+                 <div class="details">
+                     <h3>Chantrice Dilla</h3>
+                     <p>Project Manager</p>
+                     <div class="social-links">
+                         <a href="#"><i class="uil uil-facebook-f"></i></a>
+                         <a href=""><i class="uil uil-instagram"></i></a>
+                     </div>
+                 </div>
+             </div>
+             <div class="card">
+                 <img src="/developers/kian.jpg">
+                 <div class="details">
+                     <h3>Kian Miranda</h3>
+                     <p>Data Analyst</p>
+                     <div class="social-links">
+                         <a href="#"><i class="uil uil-facebook-f"></i></a>
+                         <a href=""><i class="uil uil-instagram"></i></a>
+                     </div>
+                 </div>
+             </div>
+             <div class="card">
+                 <img src="/developers/marc.jpg">
+                 <div class="details">
+                     <h3>Marc Punzalan</h3>
+                     <p>Content writer & Editor</p>
+                     <div class="social-links">
+                         <a href="#"><i class="uil uil-facebook-f"></i></a>
+                         <a href=""><i class="uil uil-instagram"></i></a>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="card">
+               <img src="/developers/kathrina.jpg">
+               <div class="details">
+                   <h3>Kathrina Lofranco</h3>
+                   <p>Web Designer</p>
+                   <div class="social-links">
+                       <a href="#"><i class="uil uil-facebook-f"></i></a>
+                       <a href=""><i class="uil uil-instagram"></i></a>
+                   </div>
+               </div>
+           </div>
+
+             <div class="card">
+                 <img src="/developers/ian.jpg">
+                 <div class="details">
+                     <h3>Ian Lacoña</h3>
+                     <p>Web Developer</p>
+                     <div class="social-links">
+                         <a href="#"><i class="uil uil-facebook-f"></i></a>
+                         <a href=""><i class="uil uil-instagram"></i></a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+    </main>
+</html>

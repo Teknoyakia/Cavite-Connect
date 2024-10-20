@@ -1,0 +1,59 @@
+body{
+  overflow: hidden;
+  background: rgb(9, 50, 131);
+  background: linear-gradient(90deg, rgba(9, 50, 131, 1) 0%, rgba(113, 47, 226, 1) 72%, rgba(6, 135, 161, 1) 100%, rgba(36, 91, 102, 1) 100%, rgba(5, 98, 117, 1) 100%);
+}
+h1{
+  text-align: center;
+  color: orange;
+  position: fixed;
+  top: 60px;
+  right: 510px;
+}
+.gallery {
+  width: 75vw;
+  height: 60vmin;
+  display: flex;
+  gap: 5px;
+  position: fixed;
+  top: 180px;
+  left: 280px;
+}
+.gallery img {
+  height: 100%;
+  flex: 1;
+  object-fit: cover;
+  overflow: hidden;
+  cursor: default;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.gallery img:hover {
+  flex: 4;
+}
+.container{
+  text-align: center;
+  color: rgb(185, 183, 178);
+  position: fixed;
+  top: 100px;
+  right: 450px;
+  font-weight: bolder;
+}
+.container-icon {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+  padding: 20px; 
+  position: fixed;
+  top: 180px;
+  left: 1100px;
+}
+
+.youtube, .facebook, .tiktok {
+  margin: 0 10px; 
+  transition: transform 0.3s; 
+}
+
+.youtube:hover, .facebook:hover, .tiktok:hover {
+  transform: scale(1.4);
+}
